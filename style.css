@@ -4,32 +4,35 @@
 
 /* leave as-is */
 #selectors * {
-    border: .1rem solid black;
-    margin: .2rem;
-    border-radius: .2rem;
+  border: 0.1rem solid black;
+  margin: 0.2rem;
+  border-radius: 0.2rem;
 }
 
 /* ****** CODE BELOW THIS LINE ****** */
 /* No Separator: element with BOTH section AND .child  */
+/* section.child {
+  background-color: aqua;
+} */
 
-
-  
 /* Space: element with .child whose ANCESTOR matches #selectors */
+/* #selectors .child {
+  background-color: brown;
+} */
 
-
-
-  
 /* , element with EITHER section OR .child */
-
-
-
-
+/* #section,
+.child {
+  background-color: chartreuse;
+} */
 /* > */
 
-
-
 /* :last-child    the last element within its container (must be the last) that matches .sibling */
+/* .sibling .niece-nephew {
+  background-color: coral;
+} */
 
-  
 /* :first-of-type    the first element of this type within its container (doesn't have to be the first of any type) that matches .sibling */
-
+/* .sibling :first-child {
+  background-color: darkmagenta;
+} */
